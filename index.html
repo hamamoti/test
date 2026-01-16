@@ -3,58 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>モルモットの生態図鑑</title>
+    <title>モルモットの生態図鑑 - 三毛カラーVer</title>
     <style>
+        /* 三毛カラーの定義：白(#FFFFFF), 茶(#C67F43), 黒(#333333) */
         body {
             font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            line-height: 1.8;
+            color: #333333; /* 黒系の文字 */
+            max-width: 850px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fdfaf5;
+            background-color: #fcf8f2; /* 柔らかな白（クリーム） */
         }
         header {
-            background-color: #e67e22;
+            background: linear-gradient(135deg, #c67f43 0%, #a05a2c 100%); /* 茶色のグラデーション */
             color: white;
-            padding: 2rem;
+            padding: 3rem 1rem;
             text-align: center;
-            border-radius: 10px;
-            margin-bottom: 20px;
+            border-radius: 50px 10px 50px 10px; /* モルモットのような丸み */
+            margin-bottom: 30px;
+            border-bottom: 8px solid #333333; /* 黒のアクセント */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         h2 {
-            border-left: 5px solid #e67e22;
-            padding-left: 10px;
-            color: #d35400;
-            margin-top: 30px;
+            display: inline-block;
+            background-color: #333333; /* 黒の背景 */
+            color: #ffffff;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 1.3rem;
+            margin-top: 40px;
         }
         .info-box {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        ul {
-            list-style-type: square;
+            background-color: #ffffff; /* 白 */
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 10px solid #c67f43; /* 茶色のライン */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-top: 10px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
+            background-color: #fff;
         }
         th {
-            background-color: #fef5e7;
+            background-color: #f3e5d8;
+            color: #a05a2c;
+            border: 1px solid #dcc6b3;
+            padding: 12px;
+            width: 30%;
+        }
+        td {
+            border: 1px solid #dcc6b3;
+            padding: 12px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+        ul li::before {
+            content: "🐾"; /* 足跡アイコン */
+            margin-right: 10px;
+            color: #c67f43;
+        }
+        strong {
+            color: #a05a2c;
+            border-bottom: 2px dotted #333333;
         }
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 60px;
+            padding: 20px;
             font-size: 0.9em;
-            color: #777;
+            color: #888;
+            border-top: 1px dashed #c67f43;
         }
     </style>
 </head>
@@ -62,56 +91,49 @@
 
 <header>
     <h1>モルモットの生態について</h1>
-    <p>〜愛くるしいテンジクネズミの仲間たち〜</p>
+    <p>〜三毛カラーに包まれて学ぶ、テンジクネズミの世界〜</p>
 </header>
 
 <div class="info-box">
     <h2>1. 基本情報</h2>
-    <p>モルモットは、ネズミ目テンジクネズミ科テンジクネズミ属に分類される齧歯類（げっしるい）です。南米アンデス地方原産で、古くから家畜化されてきました。</p>
+    <p>モルモットは、南米原産のとても社交的で愛らしい動物です。三毛（白・茶・黒）の配色は「三毛モルモット」として親しまれています。</p>
     
     <table>
         <tr>
-            <th>標準和名</th>
-            <td>テンジクネズミ（天竺鼠）</td>
+            <th>分類</th>
+            <td>テンジクネズミ科 テンジクネズミ属</td>
         </tr>
         <tr>
             <th>寿命</th>
-            <td>約5年〜8年</td>
+            <td>約5年〜8年（大切に育てると10年近く生きることも）</td>
         </tr>
         <tr>
-            <th>体重</th>
-            <td>700g 〜 1200g程度</td>
+            <th>性格</th>
+            <td>穏やかで臆病。仲間との交流を大切にします。</td>
         </tr>
     </table>
 </div>
 
 <h2>2. 特徴的な生態</h2>
-<ul>
-    <li><strong>完全な草食性：</strong> 野菜、果物、そして主食としての牧草（チモシーなど）を食べます。</li>
-    <li><strong>ビタミンCを合成できない：</strong> 人間と同じく、体内でビタミンCを作れないため、食事から摂取する必要があります。</li>
-    <li><strong>臆病で温厚：</strong> 非常に警戒心が強い反面、慣れると飼い主を見分けて鳴き声でコミュニケーションを取ります。</li>
-    <li><strong>群れを好む：</strong> 社会的な動物で、野生では複数の個体で群れを作って生活しています。</li>
-</ul>
+<div class="info-box">
+    <ul>
+        <li><strong>完全草食性：</strong> 常に歯が伸び続けるため、牧草を食べて摩耗させます。</li>
+        <li><strong>ビタミンC摂取：</strong> 自分で作れないので、パプリカや専用フードが必要です。</li>
+        <li><strong>ポップコーンジャンプ：</strong> 嬉しいとき、突然跳ね回る独特の動きを見せます。</li>
+    </ul>
+</div>
 
-<h2>3. 鳴き声による感情表現</h2>
-<p>モルモットは鳴き声が豊富な動物です。</p>
-<ul>
-    <li><strong>「プイプイ」：</strong> おねだりや嬉しい時の挨拶。</li>
-    <li><strong>「グルグル」：</strong> 警戒している時や、不快な時。</li>
-    <li><strong>「キュイーッ！」：</strong> 強い要求や、空腹を訴える時。</li>
-</ul>
-
-<h2>4. 種類（毛並み）</h2>
-<p>代表的な品種には以下のようなものがあります。</p>
-<ul>
-    <li><strong>イングリッシュ：</strong> 短毛で直毛の最も一般的なタイプ。</li>
-    <li><strong>アビシニアン：</strong> 全体に「つむじ」があり、逆立った毛が特徴。</li>
-    <li><strong>クレステッド：</strong> 頭に一つだけつむじ（冠毛）があるタイプ。</li>
-    <li><strong>テディ：</strong> 縮れた短い毛が密集しているタイプ。</li>
-</ul>
+<h2>3. 鳴き声の意味</h2>
+<div class="info-box">
+    <ul>
+        <li><strong>「プイプイ！」：</strong> ごはんが欲しい！遊んで！という喜びの表現。</li>
+        <li><strong>「クルル…」：</strong> リラックスしているときや、甘えたいとき。</li>
+        <li><strong>「歯ぎしり」：</strong> ちょっと怒っているときや、不快なとき。</li>
+    </ul>
+</div>
 
 <footer>
-    <p>&copy; 2026 モルモットの生態学習ページ</p>
+    <p>&copy; 2026 モルモットの生態学習ページ | 三毛カラー・エディション</p>
 </footer>
 
 </body>
